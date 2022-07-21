@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background-color: rgb(241, 241, 241);
+      }
+      #paynav {
+        /* border: 1px solid blue; */
+        background-color: darkblue;
+        color: white;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #paynav > img {
+        margin-left: 150px;
+        width: 10%;
+      }
+      #paynav > div {
+        margin-right: 150px;
+      }
+
+      #paybar {
+        width: 80%;
+        margin: auto;
+      }
+      #paybar > div {
+        width: 100%;
+        height: 50px;
+        padding-top: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      #paybar > div:first-child {
+        color: rgb(7, 7, 90);
+      }
+      #paybar > div:last-child {
+        background-color: white;
+        font-size: 12px;
+      }
+      #paybar > div:last-child > p {
+        color: rgb(115, 110, 110);
+      }
+
+      #main {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        gap: 20px;
+      }
+      #main > div:first-child {
+        width: 70%;
+        /* border: 1px solid red; */
+        margin-top: 20px;
+      }
+      #main > div:first-child > div:first-child {
+        height: 40px;
+        padding-top: 10px;
+        font-weight: 600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: white;
+        color: #569eef;
+      }
+      #main > div:first-child > div:first-child > img {
+        width: 3%;
+        margin-left: 10px;
+      }
+      #main > div:first-child > div:first-child > a {
+        text-decoration: none;
+        margin-bottom: 10px;
+      }
+      #main > div:first-child > div:first-child > a:hover {
+        text-decoration: underline;
+      }
+      #property {
+        /* border: 1px solid black; */
+        height: 350px;
+        margin-top: 10px;
+        background-color: white;
+      }
+      #property > div:first-child {
+        margin-left: 20px;
+        display: flex;
+      }
+      #property > div:first-child > img {
+        width: 3%;
+
+        margin-top: 15px;
+      }
+      #property > div:first-child > h4 {
+        margin-top: 15px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      #property > div:first-child > h4 > span {
+        font-size: 14px;
+        font-weight: 500;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      #property > div:nth-child(2) {
+        width: 50%;
+        margin-left: 50px;
+        display: flex;
+      }
+      #property > div:nth-child(2) > p {
+        font-size: 13px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: green;
+      }
+      #property > div:nth-child(2) > p > img {
+        width: 12%;
+      }
+      #formfill {
+        /* border: 1px solid black; */
+        width: 70%;
+        margin-left: 50px;
+      }
+      #formfill > div {
+        display: flex;
+        gap: 25px;
+      }
+      #formfill > div > div > input {
+        margin-top: 12px;
+        border: 1px solid black;
+        width: 220px;
+        height: 35px;
+      }
+      #formfill > div > div > p {
+        margin-top: 12px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      #formfill > select {
+        margin-top: 12px;
+        width: 150px;
+        height: 35px;
+      }
+      #formfill > input {
+        margin-top: 12px;
+        margin-left: 20px;
+        width: 290px;
+        height: 33px;
+      }
+      #formfill > p {
+        margin-top: 12px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      #lable {
+        margin-top: 20px;
+      }
+      #lable > p {
+        font-size: 15px;
+        margin-left: -15px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: rgb(68, 71, 74);
+      }
+      #formfill > p:last-child {
+        color: #0762ca;
+      }
+
+      #protect {
+        width: 100%;
+        height: 650px;
+        /* border: 1px solid rgb(88, 16, 189); */
+        margin-top: 20px;
+        background-color: white;
+      }
+      #protect > div {
+        margin-top: 20px;
+      }
+      #protect > div:first-child {
+        margin-top: 20px;
+        display: flex;
+      }
+      #protect > div:first-child > img {
+        width: 5%;
+        height: 4%;
+      }
+      #protect > div:first-child > h2 {
+        margin: 8px;
+        color: rgb(4, 45, 4);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #protect > div:first-child > h2 > span {
+        /* background-color: rgb(6, 77, 6); */
+        font-size: 15px;
+        font-weight: 200;
+        color: white;
+        border-radius: 5px;
+      }
+      #protect > div:nth-child(2) {
+        width: 95%;
+        border: 1px solid rgb(169, 163, 163);
+        margin: auto;
+        margin-top: 10px;
+        display: flex;
+      }
+      #protect > div:nth-child(2) > p > img {
+        width: 2%;
+        /* height: 15%; */
+        margin: 10px 0px 0px 10px;
+      }
+      #protect > div:nth-child(2) > p {
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(55, 53, 53);
+        margin: 14px;
+      }
+      #protect > div:nth-child(2) > p > span {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      /* content */
+      #content {
+        /* border: 1px solid blue; */
+        width: 90%;
+
+        margin: 20px 20px 20px 57px;
+      }
+      #content > p:first-child {
+        font-size: 13px;
+        color: rgb(55, 53, 53);
+        margin-top: 14px;
+      }
+      #content > p:first-child > span {
+        font-weight: 900;
+      }
+      #content > h4 {
+        margin-top: 8px;
+      }
+
+      #content > p {
+        margin-top: 7px;
+        font-size: 13px;
+        color: rgb(113, 113, 113);
+      }
+      #content > h4 + p {
+        margin-top: 20px;
+      }
+      #content > h6 {
+        margin-top: 18px;
+        color: rgb(72, 137, 235);
+        font-size: 10px;
+      }
+      #content > h6 + h4 {
+        margin-top: 18px;
+        color: rgb(89, 86, 86);
+        font-size: 15px;
+      }
+      #content > div {
+        margin-top: 10px;
+        /* border: 1px solid green; */
+        color: rgb(117, 113, 113);
+      }
+      #content > h6 + h4 + div {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #dcedc7;
+        font-size: 14px;
+        padding: 15px;
+      }
+      #content > h6 + h4 + div > div > h2 {
+        color: black;
+      }
+      #content > h6 + h4 + div + div {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        background-color: rgb(241, 241, 241);
+        font-size: 14px;
+        padding-left: 15px;
+      }
+      #content > p:last-child {
+        margin-top: 20px;
+      }
+      #bill {
+        margin-top: 20px;
+        /* border: 1px solid orange; */
+        background-color: white;
+        height: 450px;
+      }
+      #bill > div:first-child {
+        /* border: 1px  solid black; */
+        margin: 20px;
+        display: flex;
+        width: 60%;
+        padding-top: 20px;
+      }
+      #bill > div:first-child > img {
+        margin-top: -5px;
+        width: 5%;
+      }
+      #bill > div:first-child > p {
+        font-size: 13px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: green;
+      }
+      #bill > div:first-child > p > img {
+        margin-left: 10px;
+        width: 7%;
+      }
+      #bill > div:nth-child(2) {
+        width: 90%;
+        margin: 20px 20px 20px 57px;
+        display: flex;
+        gap: 20px;
+      }
+      #bill > div:nth-child(2) > p {
+        font-size: 15px;
+        color: #1e5fa9;
+      }
+      #paybill {
+        border-top: 1px solid black;
+        width: 90%;
+        margin: 20px 20px 20px 57px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="paynav">
+      <img
+        src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&siteid=80001"
+        alt=""
+      />
+      <div>
+        <img src="" alt="" />
+        <h3>sign in</h3>
+      </div>
+    </div>
+    <div id="paybar">
+      <div><h2>Secure booking — only takes 2 minutes!</h2></div>
+      <div>
+        <h4>
+          Free cancellation before Fri, Aug 12, 11:59pm (property local time)
+        </h4>
+        <p>
+          You can change or cancel this stay for a full refund if plans change.
+          Because flexibility matters.
+        </p>
+      </div>
+    </div>
+    <div id="main">
+      <div>
+        <div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GF_QUCcVZHrSUeEweMa8sXuP6eWMankzRw&usqp=CAU"
+            alt=""
+          /><a href="/"> Sign in to book faster</a>
+        </div>
+
+        <div id="property">
+          <div>
+            <img
+              src="https://banner2.cleanpng.com/20180412/wte/kisspng-male-silhouette-clip-art-men-shoes-5acf7b671ba247.9080606115235469831132.jpg"
+              alt=""
+            />
+            <h4>Property 1: <span> 2 Adults</span></h4>
+          </div>
+          <div>
+            <p>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5yQAp988fn2MjwZp8G17ALIJjQKPIr0Qr9w&usqp=CAU"
+                alt=""
+              />
+              All-Inclusive
+            </p>
+            <p>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5yQAp988fn2MjwZp8G17ALIJjQKPIr0Qr9w&usqp=CAU"
+                alt=""
+              />
+              Free parking
+            </p>
+            <p>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5yQAp988fn2MjwZp8G17ALIJjQKPIr0Qr9w&usqp=CAU"
+                alt=""
+              />
+              Free WiFi
+            </p>
+          </div>
+          <div id="formfill">
+            <div>
+              <div>
+                <p>First name*</p>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="(e.g. John)"
+                  required
+                />
+              </div>
+              <div>
+                <p>Last name*</p>
+                <input
+                  type="text"
+                  id="lastname"
+                  placeholder="(e.g. Smith)"
+                  required
+                />
+              </div>
+            </div>
+            <p>Mobile phone number *</p>
+            <select name="" id="">
+              USA +1
+            </select>
+            <input type="text" placeholder="So the property can reach you" />
+            <div id="lable">
+              <input type="checkbox" id="check" />
+              <p>
+                Receive text alerts about this trip. Message and data rates may
+                apply.
+              </p>
+            </div>
+            <p>Special Requests (optional)</p>
+          </div>
+        </div>
+
+        <div id="protect">
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbKLimKOuvDnJsAcN1F99E3e0J-Y2Y_d2A7OAlgWTebHp4WSuZwoYlXCJAIFZwEiilu_4&usqp=CAU"
+              alt=""
+            />
+            <h2>Protect your hotel <span>Recommended</span></h2>
+          </div>
+          <div>
+            <p>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0261/3519/9791/files/63927.png?v=1620222703"
+                alt=""
+              /><span> Important:</span> Trip cancellation due to government
+              travel advisories, fear of travel, or change of mind is not
+              covered. Travel insurance may provide coverage for COVID-19
+              diagnosed illness. COVID-19 is a foreseen event and certain other
+              coverages will not apply
+            </p>
+          </div>
+          <div id="content">
+            <p>
+              <span>Note:</span>If you are a resident of WASHINGTON state,
+              please click here to view products that you are eligible to
+              purchase.
+            </p>
+            <h4>4 reasons you might need travel protection</h4>
+            <p>
+              1.You get delayed for covered reasons and miss a night of your
+              hotel stay
+            </p>
+            <p>2.You're sick and don't use all your hotel nights</p>
+            <p>
+              3.You need to extend your trip due to the illness of a travel
+              companion
+            </p>
+            <p>
+              4.You need up to $10,000 for covered medical expenses while on
+              your trip
+            </p>
+            <h6>View insurance details and disclosures</h6>
+            <h4>Select Yes or No to continue booking *</h4>
+            <div>
+              <p>Yes, I want Hotel Booking Protection Plus for my trip.</p>
+              <div>
+                <h2>$31.03</h2>
+                <p>per person</p>
+              </div>
+            </div>
+            <div>
+              <p>No, I'm willing to risk my $1128.34 trip.</p>
+            </div>
+            <p>
+              <i
+                >“ Things happened outside of my control which caused the trip
+                to be canceled. The Travel Protection was valuable in reducing
+                the losses to me when we had to cancel the trip. ”</i
+              >
+              <span> - Mr. Rodman</span>
+            </p>
+          </div>
+        </div>
+
+        <div id="bill">
+          <div>
+            <img
+              src="https://icon-library.com/images/credit-card-icon-png/credit-card-icon-png-23.jpg"
+              alt=""
+            />
+            <p>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5yQAp988fn2MjwZp8G17ALIJjQKPIr0Qr9w&usqp=CAU"
+                alt=""
+              />
+              We use secure transmission
+            </p>
+            <p>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5yQAp988fn2MjwZp8G17ALIJjQKPIr0Qr9w&usqp=CAU"
+                alt=""
+              />
+              We protect your personal information
+            </p>
+          </div>
+          <div>
+            <p>Debit/Credit Card</p>
+            <p>PayPal</p>
+          </div>
+          <div id="paybill">
+            <p>Name on Card*</p>
+            <input type="text" id="" cardname />
+            <p>Debit/Credit card number*</p>
+            <input type="text" id="cardnumber" />
+            <p>Expiration date*</p>
+            <select name="" id="">Month</select>
+            <select name="" id="">Year</select>
+            <div>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div></div>
+    </div>
+  </body>
+</html>
