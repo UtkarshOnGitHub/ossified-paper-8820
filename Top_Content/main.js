@@ -13,6 +13,8 @@ function show(){
     }
 }
 
+
+
 document.getElementById("travel-btn").addEventListener("click" , show1)
 
 let S1box = document.getElementById("travel-hidden")
