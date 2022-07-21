@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <style>
+        #login_nav{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            height: 30px;
+            justify-content: start;
+            width: 100%;
+        }
+        #loginFormHeader{
+            border: none;
+        }
+        #loginFormHeader img{
+            width: 30px;
+            height: 30px;
+            
+        }
+        #login_nav>#log1 img{
+            width: 100px;
+            height: 80px;
+            margin-left: 650px;
+        }
+        #signup{
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, "Helvetica Neue", Arial, sans-serif;
+            /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+            margin: auto;
+            width: 30%;
+            height: auto;
+            border-radius: 15px;
+            padding-top: 15px;
+        }
+        #signup>h3{  
+            margin-left: 45px;     
+            /* margin: auto; */
+            color: #242C33;
+            font-size: 1.75rem;
+            font-weight: 700;
+            line-height: 2rem;
+        }
+        #signup>input{
+            color: #505c66;
+            display: block;
+            margin: auto;
+            width: 80%;
+            height: 40px;
+            margin-top: 25px;
+            border: 0.1px solid grey;
+            border-radius: 5px;
+            padding-left: 5px;
+        }
+        #check_tick{
+            margin-left: 50px;
+            cursor: context-menu;
+        }
+        a{
+            text-decoration: none;
+            color: #0d5ab9;
+        }
+        #signup>p{
+            text-align: center;
+            font-weight: 400;
+        }
+        #btnDiv{
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+            
+        }
+        #btn{
+            padding: 15px 10px 15px 10px;
+            border: none;
+            color: white;
+            font-size: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: rgb(92, 92, 222);
+            font-weight: 00;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 80%;
+        }
+        #subBtn:hover{
+            background-color: blue;
+        }
+        #signup #warn{
+            margin-top: 20px;
+            font-size: 14px;
+            color: grey;
+        }
+        #signup #wLink{
+            /* display: flex; */
+            /* justify-content: center; */
+            margin-top: 15px;
+            padding-bottom: 30px;
+            color: #0d5ab9;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        #social_media{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-left: 200px;
+        }
+        #social_media>img{
+            width: 6%;
+            height: 6%;
+        }
+        #social_media>img:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="login_nav">
+        <div id="log">
+            <button type="button" data-icon="tool-arrow_back" id="loginFormHeader">
+                <a href="hotel.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAXVBMVEX///8/
+                    Pz8zMzOpqak7Ozvq6upvb29zc3M4ODglJSXw8PB+fn40NDQtLS38/Pz19fXW1tZKSkpCQkJmZmazs7OIiIigoKDe3t7Ly8
+                    sqKiqQkJCXl5dgYGB4eHhSUlK7V+JlAAAB7ElEQVR4nO3dgU7CMBjEcQpVijAQQXGAvP9jGmNMhGEkY0vXu//vBfgutLeNkG40
+                    AgAAAAAAAAAAAAAAAAAAAAAAg7dcrXKP0Kvn+Tq9bLa5x+jP6yzFEGK1fsg9SU+mVfgW01PuWXrxOA4/0ib3MH34FTCE2S73ON07
+                    CxjGb7nn6dz0LGBI89wDde0ioF7Cy4Byq/TxMqBa0zQDpmnumTrVDBiD1BW/sQdDjFJ3bVcCBgKWRH6JXisZApZEPqBjycgHpEWLQ
+                    sDSye9BxxYlYFHkS0Y+IC1aOseAWktUvmQIWDr5PejYogQsinzJyAekRUvnGFBricqXTDNgWEv9y+JKwLTfTobifXlvwOYe/Io4Ho
+                    wqTHoIOCz1xz0B99X/n5BdtW8fcFfnnv4mdft/CB4WuYe/yeLQOuEx5h7+JvHYOuGpkIQnvsM/6e9D/S7Vvx4a3NMM/760vve+1ODZ
+                    wuD50OAZ3+B3GoPf2lwjqi1Ug7oxiOi5F4lYHBpVAREVGOxFz0Y1iKi2UA3qxiCi514kYnFoVAVEVGCwFz0bVS2iwV4kogIaVYFnRL
+                    WFKn9uosHZlwbnlxqcQWtwjrDBWdAG53kbnMlucK6+wbsRDN5vYfCOkpH+e2YAAAAAAAAAAAAAAAAAAAAAALD2CRNCIQY8zsQcAAAA
+                    AElFTkSuQmCC" alt=""></a>
+            </button>
+        </div>
+        <div id="log1"><img src="https://www.travelocity.com/_dms/interstitial/logo.svg?locale=en_US&siteid=80001" alt="">
+        </div>
+    </div>
+    <hr>
+    <div id=" login-form-div">
+        <form id="signup">
+            <!-- Write form inputs elements here -->
+            <h3 id="zero">Sign in</h3>
+            <input type="text" placeholder="Email address" id="email">
+            <input type="text" placeholder="First name" id="name">
+            <input type="text" placeholder="Last name" id="last">
+            <input type="password" placeholder="Password" id="pwd"><br>
+           <div id="check_tick"><input type="checkbox" id="checkbox">This a public or shared device </div> 
+            <p id="first" style="cursor: context-menu;">By creating an account, I agree to the Travelocity 
+            <a href="condition.html" id="condition">Term and Conditions</a>
+            and <a href="privacy.html" id="privacy">Privacy Statement</a></p>
+            <div id="btnDiv">
+                <input type="submit" id="btn" value="Continue">
+            </div>
+            <!-- <p id="two"><a href="forgot.html" id="forgot">Forgot password?</a></p> -->
+            <P id="warn">Already have an account?
+            <a href="Signin.html" id="wLink">Sign in</a></P>
+            <p id="four">or continue with</p>
+            <div id="social_media">
+                <img src="https://a.travel-assets.com/egds/marks/apple.svg" alt="">
+                <img src="https://a.travel-assets.com/egds/marks/facebook.svg" alt="">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
