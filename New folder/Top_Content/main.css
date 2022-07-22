@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#navbar{
+    width: 1533px;
+    height: 70px;
+    background-color: 
+    #0a438b;
+}
+
+#top-content{
+    border-radius: 1px solid red;
+    width: 1533px;
+    height: 600px;
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/06/25/TVLY_SeizeYourSomeday_lpheroB_1680x945_20210623.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+    background-repeat:no-repeat ;
+    background-size: 100% 80%;
+    margin: auto;
+    display: flex;
+    /* margin-top: 70px; */
+}
+
+#box{
+    width:80% ;
+    height: 50%;
+    margin: auto;
+    margin-bottom: 280px ;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+} 
+#lists{
+    border:none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid rgb(96, 95, 95);
+} 
+#lists>h3{
+    margin-left: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(93, 93, 93);
+}
+#lists>h3:hover{
+    border-bottom: 2px solid #0e5bb9;
+    cursor: pointer;
+    color: #0e5bb9;
+}
+
+#input-fields{
+    /* border: 1px solid red; */
+    height: 200px;
+    margin-top:10px;
+    padding: 20px 0px 0px 40px;
+    display: flex;
+    
+}
+/* #SearchInput{ */
+    /* border-radius: 1px solid red; */
+/* } */
+#search-btn{
+    width: 450px;
+    height: 47px;
+    background: none;
+    border: 1px solid grey;
+    border-radius: 8px;
+    text-align: left;
+    padding: 0px 0px 0px 20px;
+    font-size: 16px;
+    color: rgb(112, 112, 112);
+    cursor: pointer;
+}
+#search-btn:hover{
+    border: 2px solid #0a438b;
+}
+#hidden{
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+    
+
+}
+#hidden>input{
+    width: 100%;
+    height: 70px;
+    padding:25px;
+    border: none;
+    border-bottom: 1px solid rgb(71, 71, 71);
+    font-size: 17px;
+    border-radius: 10px 10px 0px 0px;
+}
+#hidden>div{
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    height: 50px;
+    padding: 15px 0px 0px 20px;
+}
+#hidden>div:hover{
+    background-color: rgb(234, 234, 234);
+    cursor: pointer;
+}
+#shown{
+    margin-top: 20px;
+    margin-left: -75px;
+}
+#shown>input{
+    margin-left: 69px;
+}
+#shown>input[type=checkbox]{
+    zoom: 1.1;
+}
+#shown>label{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgb(81, 81, 81);
+}
+ /* #date{
+    
+    border: 1px solid red;
+    margin-left: 15px;
+}   */
+.date-btn{
+    width: 150px;
+    height: 47px;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid grey;
+    text-align: left;
+    padding: 0px 0px 0px 10px;
+    font-size: 14px;
+    color: rgb(112, 112, 112);
+    cursor: pointer;
+    margin-left: 10px;
+}
+.date-btn:hover{
+    border: 2px solid #0a438b;
+}
+#travel{
+    /* border: 1px solid red; */
+    margin-left: 20px;
+    position: relative;
+}
+#travel>button{
+    width:300px ;
+    height: 47px;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid grey;
+    text-align: left;
+    padding: 0px 0px 0px 10px;
+    font-size: 14px;
+    color: rgb(112, 112, 112);
+    cursor: pointer;
+}
+#travel>button:hover{
+    border: 2px solid #0a438b
+}
+.top-content-btn{
+    width: 159px;
+    height: 47px;
+    position: absolute;
+    left: 45%;
+    margin-top: -81px;
+    background-color: #0e5bb9;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.top-content-btn:hover{
+    background-color: #0a438b;
+}
+#travel-hidden{
+    width: 362px;
+    height: 260px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    position: absolute;
+    left: 0%;
+    right: 500px;
+    border-radius: 10px;
+    padding: 10px 10px 0px 10px;
+    display: none;
+    animation-duration: 80ms
+}
+#travel-hidden>div{
+    /* border: 1px solid red; */
+    margin-top: 20px;
+}
+#travel-hidden>div:nth-child(1){
+    font-size: 20px;
+    font-weight: 600;
+}
+#travel-hidden>div:nth-child(2){
+    margin-top: 8px;
+    font-size: 15px;
+}#travel-hidden>div:nth-child(3){
+    font-weight: lighter;
+    font-size: 14px;
+    color: rgb(128, 128, 128);
+}
+#travel-hidden>div:nth-child(4){
+    font-weight: lighter;
+    font-size: 14px;
+    color: rgb(128, 128, 128);
+}
+#travel-hidden>div:nth-child(5){
+    margin-top: 45px;
+    
+}
+#travel-hidden>div:nth-child(5)>button{
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #0e5bb9;
+    border: none;
+    color: white;
+    font-size: 17px;
+}
+#triptype{
+    display: flex;
+    margin-bottom: -10px;
+}
+#triptype>div{
+    width: 150px;
+    border: 1px solid red;
+    margin-left: 30px;
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+    
+    margin-top: 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    
+    display: none;
+    font-size: 14px;
+}
+#triptype>div:hover{
+    background-color:#d7e7f2;
+    color:rgb(31, 31, 160) ;
+}
+
+/* ================================ */
