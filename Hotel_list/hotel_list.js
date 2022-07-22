@@ -36,29 +36,38 @@ let arr =[
         rating:"3.8/5 Good (1,027 Reviews)",
         rate: "200",
         date: "before,friday Aug 13",
-        total :"$957 total"
+        total :"$957 total",
+        price: 200,
+        star : 3,
+        ranking: 3.8
     },
     {
-        name:"Occidental Tucancún All Inclusive",
+        name:"Opens Grand Oasis Cancun All Inclusive ",
         image: "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/1000000/70000/64100/64052/eab3771a_b.jpg",
         des : "Zona Hotelra",
         l1 : "Fully Refundable",
         l2:"Reserve Now Pay Later",
-        rating:"3.8/5 Good (1,027 Reviews)",
-        rate: "200",
-        date: "before,friday Aug 13",
-        total :"$957 total"
+        rating:"2/5 Good (127 Reviews)",
+        rate: "400",
+        date: "before,monday Jun 23",
+        total :"$677 total",
+        price: 400,
+        star : 2,
+        ranking: 2
     },
     {
-        name:"Occidental Tucancún All Inclusive",
+        name:"Real Inn Cancun ",
         image: "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/10000000/9290000/9281000/9280941/7af9b88f_b.jpg",
         des : "Zona Hotelra",
         l1 : "Fully Refundable",
         l2:"Reserve Now Pay Later",
-        rating:"3.8/5 Good (1,027 Reviews)",
-        rate: "200",
-        date: "before,friday Aug 13",
-        total :"$957 total"
+        rating:"3/5 Good (444 Reviews)",
+        rate: "500",
+        date: "before,friday Jan 01",
+        total :"$788 total",
+        price: 500,
+        star : 2,
+        ranking: 3
     },
     {
         name:"Occidental Tucancún All Inclusive",
