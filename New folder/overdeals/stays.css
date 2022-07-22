@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bold{
+    font-weight: bold;
+}
+.grey-color{
+    color: grey;
+}
+
+body{
+    background-color: #f0f3f5;
+}
+.first-middle-div{
+    margin-top: 65px;
+}
+.mycontainer{
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+}
+.bradius{
+    border-radius: 10px;
+}
+/*  */
+
+.head-2{
+    font-weight: bold;
+}
+
+/*  */
+
+.mycard{
+    /* border: 5px solid; */
+    /* border-radius: 10px; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.img_para{
+    /* border: 1px solid transparent; */
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#img_para_1{
+    background: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/03/05/TVLY_AllInclusive_imgB_562x240_20210304.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh");
+    background-size: cover;
+    box-sizing: border-box;
+}
+#img_para_2{
+    background: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/05/04/TVLY_Packages_imgB_562x240_20210429.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh");
+    background-size: cover;
+    box-sizing: border-box;
+}	
+#img_para_3{
+    background: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/02/03/TVLY_HotelsUnder99_imgB_840x473_20201105.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh");
+    background-size: cover;
+    box-sizing: border-box;
+}
+.mycard-body{
+    padding: 10px 10px;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+.mycard-body>p:first-child{
+    font-size: 19px;
+    font-weight: bold;
+    color: rgb(79, 78, 78);
+}
+.mycard-text{
+    color: grey;
+    font-size: 14px;
+}
+.img_para-sec{
+    height: 160px;
+    border-radius: 10px 0px 0px 10px; 
+}
+
+.hr-div-2{
+    background-color: white;
+    height: 160px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+.hr-div-2>p:first-child{
+    font-weight: bold;
+}
+.first-div-div-r2{
+    /* border: 1px solid; */
+    margin-top: 10px;
+}
+.pad-0{
+    padding: 0;
+}
+
+@media (min-width:0) and (max-width:991px){
+    .first-div>div:first-child{
+        padding: 0;
+    }    
+
+}
+
+.head-2-2{
+    margin-top: 50px;
+}
+
+#exclusive-div{
+    line-height: 0;
+}
+#exclusive-div>p:last-child>a{
+    text-decoration: underline;
+}
+
+/*  */
+
+#hot-list-div{
+    /* border: 2px solid red; */
+    display: flex;
+    overflow: scroll;
+    box-sizing: border-box;
+    width: 99%;
+}
+::-webkit-scrollbar{
+    height: 0px;
+}
+#leftButton{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: -208px;
+    font-size: 20px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    left: -18px;
+    background-color: white;
+    /* opacity: 0.5; */
+    color: black;
+}
+#rightButton{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    left: 93%;
+    top: -208px;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+    /* opacity: 0.5; */
+    color: black;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}   
+.cart-box{
+    border: 1px solid grey;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 385.55px;
+    margin-right: 10px;
+}
+.d-first-div{
+    background-color: white;
+    padding: 10px 20px 10px 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    /* margin-top: 30px; */
+}
+
+.d-first-div .head-3{
+    font-weight: bold;
+    /* border: 2px solid; */
+    margin-top: 10px;
+}
+/*  */
+.d-cart-section{
+    margin-top: 50px;
+}
+.d-cart-section-img-1{
+    /* background: url("https://images.trvl-media.com/hotels/1000000/30000/21600/21544/95af2b3d_b.jpg"); */
+    height: 170px;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.d-cart-section-inner-div{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.d-cart-section-inner-div-1>p{
+    margin-bottom: 0;
+}
+.d-cart-section-inner-div-1>p:first-child{
+    font-weight: bold;
+    font-size: 18px;
+}
+.d-cart-section-inner-div-1>p:nth-child(3){
+    font-weight: bold;
+}
+.d-cart-section-inner-div-1>p:nth-child(3)>span{
+    font-weight: normal
+}
+
+.d-cart-section-inner-div-2{
+    display: flex;
+}
+.d-cart-section-inner-div>div:nth-child(2)>p{
+    border-top: 1px solid gray;
+    width: 81%;
+    margin: auto;
+    margin-left: 1px;
+}
+.offer-small-div{
+    border: 1px solid;
+    padding: 3px 7px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-size: 13px;
+}
+
+.d-cart-section-inner-div-3{
+    display: flex;
+    justify-content: space-between;
+}
+.d-cart-section-inner-div-3>div:last-child{
+    line-height: 0.5;
+}
+.d-cart-section-inner-div-3>div:first-child>p:first-child{
+    color: green;
+    font-weight: bold;
+}
+.d-cart-section-inner-div-3>div:first-child>p:last-child{
+    font-size: 13px;
+    color: gray;
+    margin-top: 20px;
+}
+.d-cart-section-inner-div-3-div-2-1{
+    display: flex;
+    /* border: 1px solid; */
+    align-items: center;
+    height: 25px;
+    margin-top: 20px;
+}
+.d-cart-section-inner-div-3-div-2-1>del,svg{
+    margin-right: 5px;
+}
+.d-cart-section-inner-div-3-div-2-1>p{
+    font-size: 22px;
+    font-weight: bold;
+    /* border: 1px solid; */
+    margin-top: 7px;
+}
+.d-cart-section-inner-div-3-div-2-2{
+    /* border: 1px s    olid; */
+    height: 22px;
+    font-size: 11px;
+    display: flex;
+    justify-content:end ;
+    color: grey;
+}
+
+/*  */
+
+.first-middle-div22{
+    /* margin-top: 65px; */
+}
+.mycontainer22{
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+}
+.bradius22{
+    border-radius: 10px;
+}
+.mycard22{
+    /* border: 5px solid; */
+    /* border-radius: 10px; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.img_para22{
+    /* border: 1px solid transparent; */
+    height: 170px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#img_para_122{
+    background: url("https://forever.travel-assets.com/flex/flexmanager/images/2020/12/09/TVLY_Meso_Vegas_resorts_hotel_editorial_module_UPDATE.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh");
+    background-size: cover;
+    box-sizing: border-box;
+}
+#img_para_222{
+    background: url("https://forever.travel-assets.com/flex/flexmanager/images/2020/11/10/Hotel_amenities.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh");
+    background-size: cover;
+    box-sizing: border-box;
+}	
+#img_para_322{
+    background: url("https://forever.travel-assets.com/flex/flexmanager/images/2020/11/10/Healthier_hotel_stays_travel-advice-2.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh");
+    background-size: cover;
+    box-sizing: border-box;
+}
+.over-lap22{
+    position: relative;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-shadow: 0px 1px 2px rgb(17 21 26 / 80%);
+}
+.over-lap-box22{
+    /* border: 2px solid yellow; */
+    box-sizing: border-box;
+    width: 95%;
+    margin-left: 10px;
+    top: 135px;
+}
+.mycard-body22{
+    /* border: 2px solid; */
+    padding: 10px 10px 1px 10px;
+    line-height: normal;
+}
+.mycard-text-222{
+    color: grey;
+    font-size: 13px;
+}
+@media (min-width:0) and (max-width: 1153px){
+    .mycontainer22{
+        width: 95%;
+    }
+}
+@media (min-width:0) and (max-width: 766px){
+    .first-middle-div22{
+        margin-top: 30px;
+    }
+    .mycard22{
+        margin-bottom: 15px;
+    }
+    .img_para22{
+        height: 200px;
+    }
+}
+
+  /*  */
+
+  .spot-light{
+    margin-top: 60px;
+}
+
+/*  */
+
+.add-section-two{
+    margin-top: 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.add-section-two-div{
+    background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/07/08/TVLY_LastMinuteGetaway_lpheroF_1320x742_20200708.jpg');
+    background-position: 50% 50%;
+    height: 250px;
+    border-radius: 10px;
+    background-size: cover;
+
+}
+.add-second-two-div{
+    background-color: white;
+    box-sizing: border-box;
+}
+.iframe-div{
+    /* border: 2px solid red; */
+    width: 98%;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+.iframe-div iframe{
+    border: 1px solid;
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+}
+.after-y-section{
+    margin-bottom: 30px;
+}
+.after-y-section-div{
+    border: 1px solid;
+    padding: 10px;
+    background-color: white;
+    /* line-height: 0.8; */
+    border-radius: 10px;
+}
+.after-y-section-div>p:first-child{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*  */
+
+.s-last-div{
+    margin-top: 100px;
+}
+
+/*  */
+.last-section{
+    margin-bottom: 200px;
+    /* line-height: 0; */
+}
+
+.last-section button{
+    background-color: white;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    /* padding: 10px; */
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+.last-section li{
+    list-style: none;
+    color: #0d5ab9;
+}
+.s-last-d-1{
+    display: flex;
+    justify-content: space-between;
+}
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.btn:active:focus, .btn:focus {
+    outline: none;
+    outline-offset: 0;
+}
+/*  */
