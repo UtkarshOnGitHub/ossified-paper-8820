@@ -65,34 +65,34 @@
                 <div class="filter">
                     <h4>Filter By</h4>
                     <h5>Popular Filters</h5>
-                    <input type="checkbox"> <span>All Inclusive</span> </br>
-                    <input type="checkbox"> <span>Free Air Port Shuttle</span> </br>
-                    <input type="checkbox"> <span>Ocean View </span></br>
-                    <input type="checkbox"> <span>Launch Included</span></br>
-                    <input type="checkbox"> <span>Hotel Resort</span></br>
+                    <input type="checkbox" id="all" value="1" checked><span>All Inclusive</span> </br>
+                    <input type="checkbox" id="free" value="2"> <span>Free Air Port Shuttle</span> </br>
+                    <input type="checkbox" id="ocean" value="3"> <span>Ocean View </span></br>
+                    <input type="checkbox" id="launch" value="4"> <span>Launch Included</span></br>
+                    <input type="checkbox" id="hr" value="5"> <span>Hotel Resort</span></br>
                 </div>
                 <div class="slideside">
                     <h4>Price Per Night</h4>
                     <input type="range" min="0" max="100">
                 </div>
-                <div class="sort">
+                <div id="sort">
                     <h4>Guest rating</h4>
                     <input type="radio" id="Any" name="drone" value="Any" checked>
                     <label for="Any">Any</label><br>
-                    <input type="radio" id="Wonderfull" name="drone" value="Wonderfull">
+                    <input type="radio" id="Wonderfull" name="drone" value="Wonderfull" onclick="check()">
                     <label for="Wonderfull">Wonderfull 4.5+</label><br>
-                    <input type="radio" id="Very Good" name="drone" value="Very Good">
+                    <input type="radio" id="Very Good" name="drone" value="Very Good" onclick="check()">
                     <label for="Very Good">Very Good 4+</label><br>
-                    <input type="radio" id="Good" name="drone" value="Good">
+                    <input type="radio" id="Good" name="drone" value="Good" onclick="check()">
                     <label for="Good">Good 3.5+</label><br>
                 </div>
                 <div id="strate">
                     <h4>Star Rating</h4>
                     <div id="starrating">
-                        <div>1★</div>
-                        <div>2★</div>
-                        <div>3★</div>
-                        <div>4★</div>
+                        <div id="1s">2★</div>
+                        <div id="2s">3★</div>
+                        <div id="3s">4★</div>
+                        <div id="4s">5★</div>
                     </div>
                 </div>
                 <div id="pType">
@@ -112,8 +112,8 @@
                     <h5 class="line">See How We Pick Our Recommended Properties</h5>
                     <select id="select" name="sort">
                         <option value="">Recommended</option>
-                        <option value="">PRICE</option>
-                        <option value="">Distance From DownTown</option>
+                        <option value="hprice">Low To High Price</option>
+                        <option value="lprice">High To Low Price</option>
                         <option value="REVIEW">Guest rating + our picks</option>
                         <option value="PRICE_RELEVANT">Price + our picks</option>
                         <option value="PROPERTY_CLASS">Star rating</option>

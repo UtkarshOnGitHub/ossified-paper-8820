@@ -326,7 +326,7 @@ section{
 #bl{
     background-color:#0e5bb9 ;
     padding: 10px;
-    margin-bottom: -40px;
+    margin-bottom: -10px;
     color: white;
     border-radius: 10px 10px 0px 0px;
     margin-top: 12px;
@@ -386,17 +386,17 @@ section{
 .slideside input[type=range]{
     width: 200px;
 }
-.sort{
+#sort{
     /* border: 1px solid red; */
     padding: 15px;
 }
-/* .sort h4{
+/* #sort h4{
     margin-bottom: 15px;
 } */
-.sort input{
+#sort input{
     margin-top: 15px;
 }
-.sort label{
+#sort label{
     font-size: 14px;
     margin-left: 10px;
     font-weight: lighter;
@@ -516,7 +516,7 @@ section{
 
 }
 .heart:hover{
-    background-color: rgb(33, 144, 255);
+    background-color: #3a7dcf;
     cursor: pointer;
 }
 
