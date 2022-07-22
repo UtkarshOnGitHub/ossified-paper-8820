@@ -1,0 +1,67 @@
+#trips_booking_1{
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    /* border: 1px solid black; */
+    width: 500px;
+    height: auto;
+    margin: auto;
+}
+.trips_booking_2{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+}
+#trips_booking_3{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* text-align: center; */
+    /* border: 1px solid black; */
+    width: 500px;
+    height: auto;
+    margin-bottom: 30px;
+}
+#trips_booking_4{
+    font-size: 25px;
+    font-weight: bolder;
+    /* margin-bottom: -20px; */
+}
+.trips_booking_7{
+    width: 95%;
+    height: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    
+}
+#trips_booking_5{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#trips_booking_5>a{
+    color: #0D5AB9;
+    
+}
+#continue{
+    width: 100%;
+    padding: 10px;
+    background-color: #0D5AB9;
+    border-radius: 10px;
+}
+#continue{
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+}
+#trips_booking_img{
+    height: 30px;
+    width: 30px;
+    color: blue;
+}
+#trips_booking_id{
+    width: 25px;
+    height: 20px;
+    margin-top: 20px;
+}

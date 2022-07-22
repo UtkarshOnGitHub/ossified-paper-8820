@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #nav-list {
+        /* border: 1px solid black; */
+        background-color: white;
+        width: 100%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        position: fixed;
+      }
+      #nav-list > div {
+        width: 190px;
+        height: 65px;
+        margin-left: 30px;
+      }
+      #nav-list > div > img {
+        width: 100%;
+        height: 100%;
+      }
+
+      #cont-list {
+        background: url("https://headless.expediagroup.com/content/dam/marketing/headless/images/home-page/Content-page-image-hero-LG2.jpg ");
+        background-repeat: no-repeat;
+        background-size: 1450px 550px;
+        height: 470px;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      #cont-list > div {
+        /* border: 1px solid black; */
+        width: 610px;
+        height: 535px;
+        margin: 65px 90px;
+      }
+      #cont-list > div > div:nth-child(1) {
+        /* border: 1px solid red ; */
+        width: 570px;
+        height: 156px;
+      }
+      #cont-list > div > div:nth-child(1) > img {
+        width: 180px;
+        margin-top: 20px;
+      }
+      #cont-list > div > div:nth-child(1) > img + div {
+        /* border: 1px solid blue; */
+        margin-top: 20px;
+        font-size: 16px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        margin-right: 50px;
+      }
+      #cont-list > div > div:nth-child(2) {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 570px;
+        height: 330px;
+        margin-top: 10px;
+        border-radius: 25px;
+        background-color: white;
+      }
+      #cont-list > div > div:nth-child(2) > div {
+        width: 460px;
+        height: 290px;
+        margin: auto;
+      }
+      #cont-list > div > div:nth-child(2) > div > p {
+        color: rgb(14, 14, 147);
+        font-size: 25px;
+        font-weight: 600;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding-top: 30px;
+      }
+
+      #cont-list > div > div:nth-child(2) > div > p + div {
+        width: 460px;
+        height: 205px;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      #cont-list > div > div:nth-child(2) > div > p + div > a {
+        border: 2px solid blue;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        color: gray;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .list {
+        color: black;
+        font-size: 21px;
+        font-weight: 600;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      /* middle part */
+
+      #list-mid {
+        margin: auto;
+        width: 75%;
+
+        margin-top: 200px;
+        text-align: center;
+      }
+      #list-mid > p {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        color: rgb(43, 41, 41);
+      }
+      #list-mid > p + div {
+        width: 73%;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 18px;
+        color: rgb(65, 63, 63);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #list-midbox {
+        display: flex;
+        height: 350px;
+        width: 100%;
+        margin-top: 70px;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      #list-midbox > div {
+        width: 33%;
+      }
+      #list-midbox > div > img {
+        width: 30%;
+        height: 28%;
+      }
+      #list-midbox > div > h3 {
+        margin-top: 50px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #list-midbox > div > div {
+        margin: auto;
+        margin-top: 20px;
+        font-size: 16px;
+        color: rgb(65, 63, 63);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      /* next middle part */
+      #listmid {
+        width: 80%;
+
+        margin: auto;
+        text-align: center;
+      }
+      #listmid > h2 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #listmid > div {
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        align-items: center;
+        gap: 20px;
+      }
+      #listmid > p {
+        margin-top: 20px;
+        font-size: 16px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      /* next-to-next-part */
+      #lastmidlist{
+        
+        width:80%;
+        margin: auto;
+        height: 470px;
+        text-align: center;
+        margin-top: 100px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    
+      #lastmidlist>div{
+       
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(65, 63, 63);
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+       
+      }
+      #lastmidlist>div>div{
+      
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    
+        font-size: 16px;
+       
+   }
+   #lastmidlist>div>div>div{
+    width: 150px;;
+    height: 100px;
+    margin: auto;
+   }
+   #lastmidlist>div>div>div>img{
+    width:100%;
+    height:100%;
+   }
+   #lastmidlist>div>div>h3{
+    margin-top: 20px;
+    color: black;
+   }
+   #lastmidlist>div>div>p{
+    margin-top: 20px;
+    color: rgb(65, 63, 63);
+   }
+   /*  footer part */
+  #listfooter{
+    text-align: center;
+    height: 250px;
+    background-color:#ededed;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  #listfooter>p{
+    margin-top: 25px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    
+        font-size: 16px; 
+  }
+  button{
+    width:150px;
+    height: 45px;
+    color: white;
+   background-color: rgb(5, 5, 179);
+   border: none;
+   margin-top: 25px;
+ 
+  }
+  #footerlast{
+    width: 100%;
+    height: 400px;
+    background-color: #080895;
+    color:white;
+  }
+  #footerlast>div:first-child{
+    width:70%;
+    height: 320px;
+    border-bottom: 2px solid rgb(159, 185, 228);
+    margin: auto;
+    display: flex;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+  }
+  #footerlast>div:first-child>div{
+   
+    width:20%;
+   display: flex;
+   flex-direction: column;
+    margin-top: 60px;
+    gap:18px;
+  }
+  #footerlast>div:first-child>div>a{
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+  }
+  #footerlast>div:first-child>div:last-child>a>img{
+    width:70%;
+  }
+  #footerlast>div:first-child>div:last-child>p{
+    font-size: 13px;
+  
+  }
+  #footerlast>div:last-child{
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+    </style>
+  </head>
+  <body>
+    <div id="nav-list">
+      <div>
+        <img
+          src="https://apps.expediapartnercentral.com/list/static/images/eg-logo-blue.svg"
+          alt="error"
+        />
+      </div>
+    </div>
+
+    <div id="cont-list">
+      <div id="listitem">
+        <div>
+          <img
+            src="https://apps.expediapartnercentral.com/list/static/images/Travelocity.svg"
+            alt=""
+          />
+          <div>
+            Reach the guests you want—those who truly value your property—with
+            Expedia Group. Signing up is free, fast, and easy.
+          </div>
+        </div>
+        <div>
+          <div>
+            <p>What would you like to list?</p>
+            <div>
+              <a href="/"
+                ><div>
+                  <img
+                    src="https://apps.expediapartnercentral.com/list/static/images/Lodging.svg"
+                    alt=""
+                  />
+                  <p class="list">Lodging</p>
+                  <p>A hotel, motel or bed and breakfast</p>
+                </div></a
+              >
+              <a href="/"
+                ><div>
+                  <img
+                    src="https://apps.expediapartnercentral.com/list/static/images/PrivateResidence.svg"
+                    alt=""
+                  />
+                  <p class="list">Private Residence</p>
+                  <p>A private home, apartment, or vacation home</p>
+                </div></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- middle part -->
+    <div id="list-mid">
+      <p>Bring the right guests within reach</p>
+      <div>
+        Connect with millions of people whose purpose, taste and budget make
+        your property the perfect place to stay.
+      </div>
+      <div id="list-midbox">
+        <div>
+          <img
+            src="https://headless.expediagroup.com/content/dam/marketing/headless/site-assets/icons/icon-world-travelers.png"
+            alt=""
+          />
+          <h3>Access a world of travelers</h3>
+          <div>
+            From long-range planners to last-minute bookers, bring travelers to
+            your door from around the world.
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://headless.expediagroup.com/content/dam/marketing/headless/site-assets/icons/icon-ideal-guests.png"
+            alt=""
+          />
+          <h3>Attract your ideal guests</h3>
+          <div>
+            Book your ideal guests—travelers who delight in what you provide and
+            want to return again and again.
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://headless.expediagroup.com/content/dam/marketing/headless/site-assets/icons/icons-grow-business.png"
+            alt=""
+          />
+          <h3>Grow your business</h3>
+          <div>
+            Make decisions based on real-time data, be more competitive & help
+            increase visibility and bookings.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- next middle part -->
+    <div id="listmid">
+      <h2>
+        Travelocity is a member of the Expedia Group marketplace of travel
+        brands
+      </h2>
+      <div>
+        <img
+          src="https://headless.expediagroup.com/content/dam/marketing/headless/site-assets/logos/Expedia%20logo.svg"
+          alt=""
+        />
+        <img
+          src="https://headless.expediagroup.com/content/dam/marketing/headless/site-assets/logos/H.com%20logo.svg"
+          alt=""
+        />
+        <img
+          src="https://headless.expediagroup.com/content/dam/marketing/headless/site-assets/logos/Vrbo%20logo.svg"
+          alt=""
+        />
+        <img
+          src="https://headless.expediagroup.com/content/dam/marketing/headless/site-assets/logos/Travelocity%20logo.svg"
+          alt=""
+        />
+        <img
+          src="https://headless.expediagroup.com/content/dam/marketing/headless/site-assets/logos/Hotwire%20logo.svg"
+          alt=""
+        />
+        <img
+          src="https://headless.expediagroup.com/content/dam/marketing/headless/site-assets/logos/orbitz%20logo.svg"
+          alt=""
+        />
+        <img
+          src="https://headless.expediagroup.com/content/dam/marketing/headless/site-assets/logos/ebookers%20logo.svg"
+          alt=""
+        />
+        <img
+          src="https://headless.expediagroup.com/content/dam/marketing/headless/site-assets/logos/CheapTickets%20logo.svg"
+          alt=""
+        />
+      </div>
+      <p>…and many more</p>
+    </div>
+
+    <!-- next-to-next-part -->
+    <div id="lastmidlist">
+        <h2>Explore the benefits of working with us</h2>
+        <div>For over 25 years, we’ve learned what travelers seek, what makes properties attractive, and how to bring the two together. Discover how this helps you.</div>
+
+        <div>
+            <div>
+                <div><img src="https://headless.expediagroup.com/content/dam/marketing/headless/site-assets/icons/icons-lodging.png" alt="">
+                </div>
+                <h3>Lodging</h3>
+                <p>Confidently fill your rooms so you can do more of what you love—creating wonderful guest experiences</p>
+            </div>
+            <div>
+                <div><img src="https://headless.expediagroup.com/content/dam/marketing/headless/site-assets/icons/icons-private-residence.png" alt="">
+                </div>
+                <h3>Private residence</h3>
+                <p>Rent your property your way. Set pricing, availability, rules, policies and more to fit your needs</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer part -->
+    <div id="listfooter">
+        <h2>Ready to get started?</h2>
+        <p>Join us today and unlock access to high-value guests.</p>
+        <button>List your property</button>
+        <p>Already a partner with Expedia Group?</p>
+    </div>
+
+    <!-- footer last part-->
+    <div id="footerlast">
+        <div>
+            <div>
+                <a href="/">FAQs</a>
+                <a href="/">Sig in</a>
+            </div>
+            <div>
+                <a href="/">Inclusive statement</a>
+                <a href="/">About us</a>
+            </div>
+            <div>
+               <a href="/"><img src="https://apps.expediapartnercentral.com/list/static/images/eg-logo.svg" alt=""></a>
+               <p>Our lodging partners—inns, hotels, guesthouses, and more—are supported by an experienced account management team. Well-informed on market conditions and travel trends, they provide insights and ideas to help you grow your business.</p>
+            </div>
+        </div>
+        <div>
+            <p>© 2022 Expedia Group. All rights reserved. Trademarks and logos are the property of their respective owners. Confidential and proprietary.</p>
+            <p> Terms of Use  |  Privacy Policy  |  Expedia Group Cookie Policy  |  Government Regulations  |  Partner Central Help  |  EU Vacation Rental agreement</p>
+        </div>
+    </div>
+  </body>
+</html>
