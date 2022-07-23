@@ -263,15 +263,14 @@ var product2 = [
 product2.forEach(function(el){
 var box2 = document.createElement("div")
 box2.style.marginTop = "-30px"
-box2.style.border = "1px solid darkgray"
 var womenImg2 = document.createElement("img")
 womenImg2.setAttribute("src",el.img)
-womenImg2.style.borderTopRightRadius = "5px"
-womenImg2.style.borderTopLeftRadius = "5px"
+womenImg2.style.borderRadius = "5px"
 
 var name = document.createElement("h2")
 name.innerText=el.name
 name.style.marginLeft ="10px"
+
 name.style.textDecoration = "none"
 name.style.fontFamily="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"
 name.style.color = "#242C33";
@@ -399,6 +398,5 @@ function reserve(el){
 var data = JSON.parse(localStorage.getItem("Reserve"))
 localStorage.setItem("Reserve",JSON.stringify(data))
 window.location.reload()
-alert("Go to the Checkout Page")
 window.location.href = "checkout.html"
 }
