@@ -263,6 +263,7 @@ var product2 = [
 product2.forEach(function(el){
 var box2 = document.createElement("div")
 box2.style.marginTop = "-30px"
+box2.style.border = "1px solid darkgray"
 var womenImg2 = document.createElement("img")
 womenImg2.setAttribute("src",el.img)
 womenImg2.style.borderTopRightRadius = "5px"
