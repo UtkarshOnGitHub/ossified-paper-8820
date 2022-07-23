@@ -399,5 +399,6 @@ function reserve(el){
 var data = JSON.parse(localStorage.getItem("Reserve"))
 localStorage.setItem("Reserve",JSON.stringify(data))
 window.location.reload()
+alert("Go to the Checkout Page")
 window.location.href = "checkout.html"
 }
