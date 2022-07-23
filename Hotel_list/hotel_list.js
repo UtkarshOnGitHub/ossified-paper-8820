@@ -295,6 +295,54 @@ let arr =[
         offper: 33,
         value :5
     },
+    {
+        name:"Occidental Tucancún All Inclusive",
+        image: "https://images.trvl-media.com/hotels/1000000/990000/986200/986131/ee377795.jpg?impolicy=resizecrop&rw=455&ra=fit",
+        des : "Zona Hotelra",
+        l1 : "Fully Refundable",
+        l2:"Reserve Now Pay Later",
+        rating:"3.2/5 Good (766 Reviews)",
+        rate: "360",
+        date: "before,friday Nov 1",
+        total :"$567 total",
+        price: 300,
+        star : 5,
+        ranking: 5,
+        offper: 33,
+        value :5
+    },
+    {
+        name:"Occidental Tucancún All Inclusive",
+        image: "https://images.trvl-media.com/hotels/1000000/530000/522500/522481/9ec1e08d.jpg?impolicy=resizecrop&rw=455&ra=fit",
+        des : "Zona Hotelra",
+        l1 : "Fully Refundable",
+        l2:"Reserve Now Pay Later",
+        rating:"3.2/5 Good (766 Reviews)",
+        rate: "360",
+        date: "before,friday Nov 1",
+        total :"$567 total",
+        price: 200,
+        star : 5,
+        ranking: 5,
+        offper: 33,
+        value :5
+    },
+    {
+        name:"Occidental Tucancún All Inclusive",
+        image: "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/10000000/9290000/9281000/9280941/7af9b88f_b.jpg",
+        des : "Zona Hotelra",
+        l1 : "Fully Refundable",
+        l2:"Reserve Now Pay Later",
+        rating:"3.2/5 Good (766 Reviews)",
+        rate: "360",
+        date: "before,friday Nov 1",
+        total :"$567 total",
+        price: 900,
+        star : 5,
+        ranking: 5,
+        offper: 33,
+        value :5
+    },
 ]
 append(arr)
 
