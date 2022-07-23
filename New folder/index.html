@@ -7,11 +7,22 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="header.css">
 	<title></title>
 </head>
 <body>
-	<div id="Navbar">
-    </div>
+	
+		<div class="container-fluid">
+			<div class="row">
+				<div id="Navbar">
+					
+				</div>
+			</div>
+		</div>
+	<!--  -->
+
+
+	<!--  -->
     <div id="top-content">
         <div id="box">
             <div id="lists">
@@ -27,52 +38,68 @@
                 <div id="S2"><h3></h3></div>
                 <div id="S3"><h3></h3></div>
             </div>
-            <div id="input-fields">  
-                <div id="SearchInput">
-                    <button id="search-btn"> <i class="fa-solid fa-location-dot"></i> <span style="margin-left:10px ;">Going To</span> </button>
-                    <div id="hidden">
-                        <input type="text" placeholder="Where Are You Going ?">
-                        <div>
-                            <i class="fa-solid fa-clock-rotate-left"></i>
-                            <span>New York</span>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-clock-rotate-left"></i>
-                            <span>USA</span>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-clock-rotate-left"></i>
-                            <span>Malasiya</span>
-                        </div>
-                    </div>
-                    <div id="shown">  
-                        <input type="checkbox" class="check">
-                        <label for="">Add A Flight</label>
-                        <input type="checkbox" class="check">
-                        <label for="">Add A Car</label>
-                    </div>
-                </div>
-                <div id="date">
-                    <input  type="text" placeholder=" &#xf133; Check-In" class="date-btn" onfocus="(this.type='date')" onblur="(this.type='text')"> 
-                    <button class="date-btn"><i class="fa-solid fa-calendar-day"></i><span style="margin-left:10px ;" >Check-Out</span></button>
-                </div>
-                <div id="travel">
-                    <button id="travel-btn"><i class="fa-solid fa-user"></i><span  style="margin-left:10px ;">Check-In</span></button>
-                    <div id="travel-hidden">
-                        <div>Travelers</div>
-                        <div>Room 1</div>
-                        <div>Adults</div>
-                        <div>Children</div>
-                        <div>
-                            <button>Done</button>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-            <button class="top-content-btn">Search</button>
+            <div class="row">
+				<div id="input-fields">  
+					<div class="col-md-12 col-lg-6">
+						<div id="SearchInput">
+							<button id="search-btn"> <i class="fa-solid fa-location-dot"></i> <span style="margin-left:10px ;">Going To</span> </button>
+							<div id="hidden">
+								<input type="text" placeholder="Where Are You Going ?">
+								<div>
+									<i class="fa-solid fa-clock-rotate-left"></i>
+									<span>New York</span>
+								</div>
+								<div>
+									<i class="fa-solid fa-clock-rotate-left"></i>
+									<span>USA</span>
+								</div>
+								<div>
+									<i class="fa-solid fa-clock-rotate-left"></i>
+									<span>Malasiya</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 col-lg-3">
+						<div id="date">
+							<input  type="text" placeholder=" &#xf133; Check-In" class="date-btn" onfocus="(this.type='date')" onblur="(this.type='text')"> 
+							<button class="date-btn"><i class="fa-solid fa-calendar-day"></i><span >Check-Out</span></button>
+						</div>
+					</div>
+					<div class="col-md-12 col-lg-3">
+						<div id="travel">
+							<button id="travel-btn"><i class="fa-solid fa-user"></i><span  style="margin-left:10px ;">Check-In</span></button>
+							<div id="travel-hidden">
+								<div>Travelers</div>
+								<div>Room 1</div>
+								<div>Adults</div>
+								<div>Children</div>
+								<div>
+									<button>Done</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> 
+			<div class="row">
+				<div class="shown-main">
+					<div id="shown">  
+						<input type="checkbox" class="check">
+						<label for="">Add A Flight</label>
+						<input type="checkbox" class="check">
+						<label for="">Add A Car</label>
+					</div>
+				</div>
+			</div>
+            <div class="row">
+				<button class="top-content-btn">Search</button>
+			</div>
         </div>
     </div>
+	<!--  -->
 	<div class="mycontainer">
+
 		<div class="row">
 			<div class="">
 				<div class="">
@@ -149,7 +176,7 @@
 			</div>
 		</div>
 		<!--  -->
-		<h2>Start planning your next trip</h2>
+		<h2 class="bold">Start planning your next trip</h2>
 		<!--  -->
 		<div class="row fourth-middle-div">
 			<div class="col-lg-3">
@@ -183,7 +210,7 @@
 		</div>
 		<!--  -->
 		<div class="featured-offers-div">
-			<h2>Featured offers</h2>
+			<h2 class="bold">Featured offers</h2>
 		</div>
 		<!--  -->
 
@@ -206,7 +233,7 @@
 		<!--  -->
 
 		<div class="featured-offers-div">
-			<h2>Here to help keep you on the move</h2>
+			<h2 class="bold">Here to help keep you on the move</h2>
 		</div>
 
 		<!--  -->
@@ -214,20 +241,29 @@
 		<div class="row after-y-section">
 			<div class="col-sm-4">
 				<div class="after-y-section-div">
-					<p>Change or cancel a trip</p>
-					<p>Make updates to your itinerary or cancel a book</p>
+					<div class="after-y-section-div-d">
+						<p class="aysd-div bold">Change or cancel a trip</p>
+						<img class="after-y-section-image" src="https://forever.travel-assets.com/flex/flexmanager/images/2021/04/08/icon__mode_edit.svg" alt="">
+					</div>
+					<p class="aysd-div grey-color">Make updates to your itinerary or cancel a book</p>
 				</div>
 			</div>
 			<div class="col-sm-4">
 				<div class="after-y-section-div">
-					<p>Change or cancel a trip</p>
-					<p>Make updates to your itinerary or cancel a book</p>
+					<div class="after-y-section-div-d">
+						<p class="aysd-div bold">Change or cancel a trip</p>
+						<img class="after-y-section-image" src="https://forever.travel-assets.com/flex/flexmanager/images/2021/04/08/icon__monetization_on.svg" alt="">
+					</div>
+					<p class="aysd-div grey-color">Make updates to your itinerary or cancel a book</p>
 				</div>
 			</div>
 			<div class="col-sm-4">
 				<div class="after-y-section-div">
-					<p>Change or cancel a trip</p>
-					<p>Make updates to your itinerary or cancel a book</p>
+					<div class="after-y-section-div-d">
+						<p class="aysd-div bold">Change or cancel a trip</p>
+						<img class="after-y-section-image" src="https://forever.travel-assets.com/flex/flexmanager/images/2021/04/08/icon__chat.svg" alt="">
+					</div>
+					<p class="aysd-div grey-color">Make updates to your itinerary or cancel a book</p>
 				</div>
 			</div>
 		</div>
@@ -241,7 +277,7 @@
 			<div class="col-md-8 col-lg-6 last-second-div-2 cl8">
 				<div>
 					<p id="inside-last-second">Wander Wisely with the Travelocity app</p>
-					<ul>
+					<ul class="ul-l-div">
 						<li>Get helpful alerts about flight status and gate numbers</li>
 						<li>Access all your travel details, even when offline</li>
 						<li>Easily contact your hotel by messaging them right in the app</li>
@@ -291,7 +327,7 @@
                     </div>
                 </div>
 				<div class="last-second-div-2-last-p">
-                    <p>By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.</p>
+                    <p class="grey-color">By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.</p>
                 </div>
 			</div>
 			<div class="col-md-12 col-lg-2 last-second-div-3">
@@ -313,8 +349,15 @@
 		<div class="last-section">
 			<div class="row">
 				<div class="col-md-6 mb-5">
-					<button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-						Hotels
+					<button class="btn" id="r-div-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+						<div class="s-last-d-1">
+                            <p>Beach destinations</p>
+                            <div class="r-div">
+                                <svg id="r-d-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
 					</button>
 					<div class="collapse" id="collapseExample">
 						<div class="card card-body">
@@ -344,8 +387,15 @@
 					</div>
 				</div>
 				<div class="col-md-6 mb-5">
-					<button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
-						Flights
+					<button class="btn" id="r-div-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+						<div class="s-last-d-1">
+                            <p>Hotels</p>
+                            <div class="r-div">
+                                <svg id="r-d-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
 					</button>
 					<div class="collapse" id="collapseExample2">
 						<div class="card card-body">
@@ -376,8 +426,15 @@
 				</div>
 
 				<div class="col-md-6 mb-5">
-					<button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
-						Vacation packages
+					<button class="btn" id="r-div-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+						<div class="s-last-d-1">
+                            <p>Beach destinations</p>
+                            <div class="r-div">
+                                <svg id="r-d-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
 					</button>
 					<div class="collapse" id="collapseExample3">
 						<div class="card card-body">
@@ -408,8 +465,15 @@
 				</div>
 
 				<div class="col-md-6 mb-5">
-					<button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
-						Cars
+					<button class="btn" id="r-div-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+						<div class="s-last-d-1">
+                            <p>Cars</p>
+                            <div class="r-div">
+                                <svg id="r-d-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
 					</button>
 					<div class="collapse" id="collapseExample4">
 						<div class="card card-body">
@@ -440,8 +504,15 @@
 				</div>
 
 				<div class="col-md-6 mb-5">
-					<button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
-						Cruises
+					<button class="btn" id="r-div-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+						<div class="s-last-d-1">
+                            <p>Cruises</p>
+                            <div class="r-div">
+                                <svg id="r-d-5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
 					</button>
 					<div class="collapse" id="collapseExample5">
 						<div class="card card-body">
@@ -472,8 +543,15 @@
 				</div>
 
 				<div class="col-md-6 mb-5">
-					<button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
-						All Inclusive resorts
+					<button class="btn" id="r-div-6" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
+						<div class="s-last-d-1">
+                            <p>All Inclusive resorts</p>
+                            <div class="r-div">
+                                <svg id="r-d-6" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
 					</button>
 					<div class="collapse" id="collapseExample6">
 						<div class="card card-body">
@@ -507,8 +585,15 @@
 
 			<div class="row">
 				<div class="col mb-5">
-					<button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample">
-						All Inclusive resorts
+					<button class="btn" id="r-div-7" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample">
+						<div class="s-last-d-1">
+                            <p>All Inclusive resorts</p>
+                            <div class="r-div">
+                                <svg id="r-d-7" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </div>
 					</button>
 					<div class="collapse" id="collapseExample7">
 						<div class="card card-body">
@@ -539,7 +624,7 @@
 				</div>
 			</div>
 
-	</div>
+		</div>
 	
 </body>
 </html>
@@ -549,4 +634,64 @@
 <script src="./Top_Content/main.js" type="module"></script>
 <script src="https://kit.fontawesome.com/3b564a3fd9.js" crossorigin="anonymous"></script>
 <script src="index.js" type="module"></script>
+<script src="header.js" type="module"></script>
+<script>
 
+	document.querySelector('#r-div-1').addEventListener('click',()=>{
+			let id1=document.getElementById('r-d-1')
+			if(id1.style.transform=='rotate(180deg)'){
+				id1.style.transform='none';
+			}else
+			id1.style.transform='rotate(180deg)';
+			id1.style.transition='0.5s'
+		})
+		document.querySelector('#r-div-2').addEventListener('click',()=>{
+			let id1=document.getElementById('r-d-2')
+			if(id1.style.transform=='rotate(180deg)'){
+				id1.style.transform='none';
+			}else
+			id1.style.transform='rotate(180deg)';
+			id1.style.transition='0.5s'
+		})
+		document.querySelector('#r-div-3').addEventListener('click',()=>{
+			let id1=document.getElementById('r-d-3')
+			if(id1.style.transform=='rotate(180deg)'){
+				id1.style.transform='none';
+			}else
+			id1.style.transform='rotate(180deg)';  
+			id1.style.transition='0.5s'
+		})
+		document.querySelector('#r-div-4').addEventListener('click',()=>{
+			let id1=document.getElementById('r-d-4')
+			if(id1.style.transform=='rotate(180deg)'){
+				id1.style.transform='none';
+			}else
+			id1.style.transform='rotate(180deg)';  
+			id1.style.transition='0.5s'
+		})
+		document.querySelector('#r-div-5').addEventListener('click',()=>{
+			let id1=document.getElementById('r-d-5')
+			if(id1.style.transform=='rotate(180deg)'){
+				id1.style.transform='none';
+			}else
+			id1.style.transform='rotate(180deg)';
+			id1.style.transition='0.5s'
+		})
+		document.querySelector('#r-div-6').addEventListener('click',()=>{
+			let id1=document.getElementById('r-d-6')
+			if(id1.style.transform=='rotate(180deg)'){
+				id1.style.transform='none';
+			}else
+			id1.style.transform='rotate(180deg)';  
+			id1.style.transition='0.5s'
+		})
+		document.querySelector('#r-div-7').addEventListener('click',()=>{
+			let id1=document.getElementById('r-d-7')
+			if(id1.style.transform=='rotate(180deg)'){
+				id1.style.transform='none';
+			}else
+			id1.style.transform='rotate(180deg)';
+			id1.style.transition='0.5s'
+		})
+	
+	</script>
