@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #nav-list {
+        /* border: 1px solid black; */
+        background-color: white;
+        width: 100%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        position: fixed;
+      }
+      #nav-list > div {
+        width: 190px;
+        height: 65px;
+        margin-left: 30px;
+      }
+      #nav-list > div > img {
+        width: 100%;
+        height: 100%;
+      }
+
+      #footerlast{
+    width: 100%;
+    height: 400px;
+    background-color: #080895;
+    color:white;
+  }
+  #footerlast>div:first-child{
+    width:70%;
+    height: 320px;
+    border-bottom: 2px solid rgb(159, 185, 228);
+    margin: auto;
+    display: flex;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+  }
+  #footerlast>div:first-child>div{
+   
+    width:20%;
+   display: flex;
+   flex-direction: column;
+    margin-top: 60px;
+    gap:18px;
+  }
+  #footerlast>div:first-child>div>a{
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+  }
+  #footerlast>div:first-child>div:last-child>a>img{
+    width:70%;
+  }
+  #footerlast>div:first-child>div:last-child>p{
+    font-size: 13px;
+  
+  }
+  #footerlast>div:last-child{
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  #mid{
+    width: 100%;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  #mid>div{
+    
+    width:520px;
+    margin: auto;
+   font-family: Verdana, Geneva, Tahoma, sans-serif ;
+  }
+  #mid>div>p{
+    font-size: 15px;
+    color: rgb(141, 136, 136);
+  }
+  #mid>div>p+p{
+    font-size: 20px;
+   font-weight: 600;
+   color: rgb(49, 47, 47);
+   margin-top: 20px;
+  }
+  #mid>div>input{
+    width:510px;
+    height: 43px;
+    margin-top: 20px;
+   
+  }
+  #mid>div>button{
+    width:515px;
+    height: 45px;
+    background-color: rgb(5, 5, 143);
+    font-size: 16px;
+    color: white;
+    border: none;
+    margin-top: 20px;
+
+  }
+    </style>
+</head>
+<body>
+    <div id="nav-list">
+        <div>
+          <img
+            src="https://apps.expediapartnercentral.com/list/static/images/eg-logo-blue.svg"
+            alt="error"
+          />
+        </div>
+      </div>
+
+
+
+      <div id="mid">
+        <div>
+            <p>Step 1 of 3</p>
+            <p>Where is your property located?</p>
+            <input type="text" placeholder="Enter address...">
+            <button>Next</button>
+        </div>
+        
+      </div>
+      
+      
+      
+      <div id="footerlast">
+        <div>
+            <div>
+                <a href="/">FAQs</a>
+                <a href="/">Sig in</a>
+            </div>
+            <div>
+                <a href="/">Inclusive statement</a>
+                <a href="/">About us</a>
+            </div>
+            <div>
+               <a href="/"><img src="https://apps.expediapartnercentral.com/list/static/images/eg-logo.svg" alt=""></a>
+               <p>Our lodging partners—inns, hotels, guesthouses, and more—are supported by an experienced account management team. Well-informed on market conditions and travel trends, they provide insights and ideas to help you grow your business.</p>
+            </div>
+        </div>
+        <div>
+            <p>© 2022 Expedia Group. All rights reserved. Trademarks and logos are the property of their respective owners. Confidential and proprietary.</p>
+            <p> Terms of Use  |  Privacy Policy  |  Expedia Group Cookie Policy  |  Government Regulations  |  Partner Central Help  |  EU Vacation Rental agreement</p>
+        </div>
+        
+           
+    </div>
+</body>
+</html>

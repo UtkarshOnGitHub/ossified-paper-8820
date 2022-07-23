@@ -30,8 +30,8 @@
                 <h3 id="flight">Flights</h3>
                 <h3 id="cars">Cars</h3>
                 <h3 id="packages">Packages</h3>
-                <h3>Things To Do</h3>
-                <h3>Cruises</h3>
+                <h3 id="ttd">Things To Do</h3>
+                <h3 id="cr">Cruises</h3>
             </div>
             <div id="triptype">
                 <div id="S1"><h3></h3></div>
@@ -40,7 +40,7 @@
             </div>
             <div class="row">
 				<div id="input-fields">  
-					<div class="col-md-12 col-lg-6">
+					<div class="col-md-12 col-lg-5">
 						<div id="SearchInput">
 							<button id="search-btn"> <i class="fa-solid fa-location-dot"></i> <span style="margin-left:10px ;">Going To</span> </button>
 							<div id="hidden">
@@ -60,10 +60,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-12 col-lg-3">
+					<div class="col-md-12 col-lg-4">
 						<div id="date">
-							<input  type="text" placeholder=" &#xf133; Check-In" class="date-btn" onfocus="(this.type='date')" onblur="(this.type='text')"> 
-							<button class="date-btn"><i class="fa-solid fa-calendar-day"></i><span >Check-Out</span></button>
+							<input  type="text" placeholder=" Check-In" class="date-btn" onfocus="(this.type='date')" onblur="(this.type='text')"> 
+							<input  type="text" placeholder=" Check-In" class="date-btn" onfocus="(this.type='date')" onblur="(this.type='text')"> 
 						</div>
 					</div>
 					<div class="col-md-12 col-lg-3">
@@ -146,7 +146,7 @@
 							<div class="msdc-inside">
 								<p>All-inclusive resorts</p>
 								<p>Think of nothing beyond having a great time with your family</p>
-								<button type="button" class="btn btn-light msdc-btn">View deals</button>
+								<button type="button" class="btn btn-light msdc-btn" id="bt">View deals</button>
 							</div>
 						</div>
 					</div>
@@ -155,7 +155,7 @@
 							<div class="msdc-inside msdc-inside-2">
 								<p>Last minute getaways</p>
 								<p>Celebrate the moment with an unexpected getaway</p>
-								<button type="button" class="btn btn-light msdc-btn">View deals</button>
+								<button type="button" class="btn btn-light msdc-btn" id="bt">View deals</button>
 							</div>
 						</div>
 					</div>
@@ -625,6 +625,10 @@
 			</div>
 
 		</div>
+		</div>
+		<div id="footer">
+
+		</div>
 	
 </body>
 </html>
@@ -634,7 +638,7 @@
 <script src="./Top_Content/main.js" type="module"></script>
 <script src="https://kit.fontawesome.com/3b564a3fd9.js" crossorigin="anonymous"></script>
 <script src="index.js" type="module"></script>
-<script src="header.js" type="module"></script>
+
 <script>
 
 	document.querySelector('#r-div-1').addEventListener('click',()=>{
@@ -695,3 +699,4 @@
 		})
 	
 	</script>
+	<script src="header.js" type="module"></script>

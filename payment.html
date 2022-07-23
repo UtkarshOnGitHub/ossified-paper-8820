@@ -338,15 +338,18 @@
 
       <div id="photo">
         <div id="photodiv">
-          <img
+          <div id="kkk">
+
+          </div>
+          <!-- <img
             src="	https://images.trvl-media.com/hotels/1000000/200000/197400/197382/50ddc787_l.jpg"
             alt=""
-          />
+          /> -->
 
           <div>
             <p><span> 3.9/5 </span>Good (1,328 reviews)</p>
-            <p>Guests rated this property 4.3/5 for cleanliness</p>
-            <p><span>1 Property:</span> Double Room</p>
+            <p id="nn"></p>
+            <p id="pr"><span>1 Property:</span> Double Room</p>
             <p><span>Check-in:</span> Fri, Aug 19</p>
             <p><span>Check-out:</span> Tue, Aug 23</p>
             <p>4-night stay</p>
@@ -359,10 +362,10 @@
           <div>
             <div>
               <p>1 room x 4 nights</p>
-              <p>$819.88</p>
+              <p id="wifi"></p>
             </div>
             <p>$204.97 average per night</p>
-            <button>You saved 43%</button>
+            <button id="save"></button>
             <div>
               <p>Taxes</p>
               <p>$155.80</p>
@@ -375,15 +378,15 @@
           <div>
             <div>
               <h4>Price</h4>
-              <h4>$981.27</h4>
+              <h4 id="amt">0</h4>
             </div>
             <div>
               <p>Pay now</p>
               <p>$0.00</p>
             </div>
             <div>
-              <p>Pay at property</p>
-              <p>$981.27</p>
+              <p>Total Amount</p>
+              <h4 id="amt1">0</h4>
             </div>
           </div>
         </div>
@@ -433,6 +436,7 @@
 
         if (count == 3) {
           alert("Your booking successful");
+          window.location.href = "../New folder/index.html"
         } else if (count == 5) {
           clearInterval(id);
         }
@@ -443,4 +447,24 @@
       alert("Your booking failed");
     }
   }
+
+
+
+  let data = JSON.parse(localStorage.getItem("Reserve"));
+
+  document.getElementById("amt").innerText = `$${(+(data.price))}`;
+  document.getElementById("amt1").innerText = `$${(+data.price+155)}`;
+
+
+  let img = document.createElement("img")
+  img.src = data.img
+
+  document.getElementById("kkk").append(img)
+
+  document.getElementById("nn").innerText = data.name
+  document.getElementById("pr").innerText = data.parking
+
+  document.getElementById("save").innerText = `Flat ${data.off}`
+  document.getElementById("wifi").innerText = data.free
+  console.log(data)
 </script>

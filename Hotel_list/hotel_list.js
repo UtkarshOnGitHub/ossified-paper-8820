@@ -351,6 +351,9 @@ function append(arr){
     arr.forEach((e)=>{
         let mainbox = x("div");
         mainbox.id = "show"
+        mainbox.addEventListener("click" , ()=>{
+            window.location.href ="../hotels/hotel.html"
+        })
         let div1 = x("div");
         let div2 =x("div")
         let div3 = x("div")

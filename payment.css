@@ -479,10 +479,14 @@ li:nth-child(4) {
   background-color: white;
   padding-bottom: 20px;
 }
-#photodiv > img {
+/* #photodiv > img {
   width: 100%;
   height: 150px;
   border-radius: 5px;
+} */
+#kkk img{
+  width: 100%;
+  height: 100%;
 }
 #photodiv > div {
   margin: auto;
@@ -530,6 +534,7 @@ p:nth-child(6) {
   margin-top: -15px;
 }
 #photobill > div:nth-child(2) > button {
+  padding: 3px;
   color: white;
   background: green;
   margin-top: 20px;

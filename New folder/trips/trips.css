@@ -56,3 +56,11 @@
 #trip_nav7{
     color: grey;
 }
+
+
+@media (min-width: 992px){
+
+    #Navbar .col-md-6  {
+        width: 40%;
+    }
+}

@@ -57,7 +57,7 @@ function call3(){
     document.getElementById("S1").innerText = "Rental Cars"
     document.getElementById("S2").style.display = "block"
     document.getElementById("S2").innerText = "Air Transportation"
-    document.getElementById("S3").style.display = "block"
+    document.getElementById("S3").style.display = "none"
     document.getElementById("S3").innerText = ""
     document.getElementById("input-fields").innerHTML = cars()
 }
@@ -70,7 +70,33 @@ function call4(){
     document.getElementById("S1").innerText = "Low Budget"
     document.getElementById("S2").style.display = "block"
     document.getElementById("S2").innerText = "Luxury Hotel"
-    document.getElementById("S3").style.display = "block"
+    document.getElementById("S3").style.display = "none"
     document.getElementById("S3").innerText = ""
     document.getElementById("input-fields").innerHTML = flight()
+}
+
+document.getElementById("ttd").addEventListener("click" , call5)
+function call5(){
+    console.log("run")
+    document.getElementById("input-fields").innerHTML = "";
+    document.getElementById("S1").style.display = "block"
+    document.getElementById("S1").innerText = "Low Budget"
+    document.getElementById("S2").style.display = "block"
+    document.getElementById("S2").innerText = "Luxury Hotel"
+    document.getElementById("S3").style.display = "none"
+    document.getElementById("S3").innerText = ""
+    document.getElementById("input-fields").innerHTML = flight()
+}
+
+document.getElementById("cr").addEventListener("click" , call6)
+function call6(){
+    console.log("run")
+    document.getElementById("input-fields").innerHTML = "";
+    document.getElementById("S1").style.display = "block"
+    document.getElementById("S1").innerText = "Low Budget"
+    document.getElementById("S2").style.display = "block"
+    document.getElementById("S2").innerText = "Luxury Hotel"
+    document.getElementById("S3").style.display = "none"
+    document.getElementById("S3").innerText = ""
+    document.getElementById("input-fields").innerHTML = cars()
 }

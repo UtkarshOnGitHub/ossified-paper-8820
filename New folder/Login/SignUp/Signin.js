@@ -18,9 +18,9 @@
             window.location.href="create.html";
             alert("Please Creat Account!");
         }
-        else if (log(signObj,login.email.value,login.pwd.value)){
-            localStorage.setItem("loginKey", JSON.stringify(logObj));
-            window.location.href="index.html";
+        else if (log(signObj,login.email.value,login.pwd.value)!=false){
+            localStorage.setItem("loginKey", JSON.stringify(arr_1));
+            window.location.href="../../index.html";
             alert("Login Successful!");
         }
         else {
@@ -32,15 +32,16 @@
             }
         }
     }
-    
+    let arr_1
     function log(arr,username,pswd) {
-        let arr_1 = arr.filter(function(el){
+        arr_1 = arr.filter(function(el){
             return(el.emailID==username && el.password == pswd)
         })
+
         if(arr_1.length == 0){
             return false
         }
         else{
-            return true
+            return arr_1
         }
     }
