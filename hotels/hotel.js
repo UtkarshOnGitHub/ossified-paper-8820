@@ -265,7 +265,8 @@ var box2 = document.createElement("div")
 box2.style.marginTop = "-30px"
 var womenImg2 = document.createElement("img")
 womenImg2.setAttribute("src",el.img)
-womenImg2.style.borderRadius = "5px"
+womenImg2.style.borderTopRightRadius = "5px"
+womenImg2.style.borderTopLeftRadius = "5px"
 
 var name = document.createElement("h2")
 name.innerText=el.name
