@@ -4,7 +4,7 @@ let navbar =()=>{
         <div>
             <ul id="fist_nav">
                 <li>
-                    <a href = "../New folder/index.html"><img src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&siteid=80001&2" alt=""></a>
+                    <a href = "../../index.html"><img src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&siteid=80001&2" alt=""></a>
                 </li>
             </ul>
         </div>
@@ -101,10 +101,10 @@ let navbar =()=>{
     <div id="newLi_div">
         <ul id="rest_nav">
              <li id="bt">Our Deals</li>
-             <li><a href="./listYourProperty.html"">List Your Property</a></li>
+             <li><a href="./New folder/listYourProperty.html"">List Your Property</a></li>
              <li>Support</li>
-             <li ><a href="./trips/trips.html">Trips</a></li>
-             <li><a href="./Login/SignUp/Signin.html" id="mysign">Sign In</a></li>
+             <li ><a href="./New folder/trips/trips.html">Trips</a></li>
+             <li><a href="./New folder/Login/SignUp/Signin.html" id="mysign">Sign In</a></li>
         </ul> 
      </div>
 </div>`
