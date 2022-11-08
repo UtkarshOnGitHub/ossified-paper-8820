@@ -20,7 +20,7 @@
         }
         else if (log(signObj,login.email.value,login.pwd.value)!=false){
             localStorage.setItem("loginKey", JSON.stringify(arr_1));
-            window.location.href="../../index.html";
+            window.location.href="../../../index.html";
             alert("Login Successful!");
         }
         else {
